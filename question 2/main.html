@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Device Specification</h1>
+
+    <label for="chosenBrand">Select Brand:</label>
+    <select id="chosenBrand" onchange="modelsOfDevices()">
+        <option value="">Select Brand</option>
+    </select>
+
+    <label for="chosenModel">Select Model:</label>
+    <select id="chosenModel">
+        <option value="">Select Model</option>
+    </select>
+
+    <button onclick="displayModelDetails()">Display Details</button>
+    <h3>Selected Model Details:</h3>
+    <p id="modelDetails"></p>
+
+<script src="main.js"></script>
+</body>
+</html>
